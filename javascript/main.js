@@ -1,8 +1,3 @@
-
-/**
- * Ajusta aquí las portadas una vez que estén dentro de /assets.
- * Ejemplo: { slot: 1, file: "../assets/arctic-monkeys.jpg", label: "AM" }
- */
 const vinylCovers = [
   { slot: 1, file: "../assets/Billie.jpg", label: "Billie" },
   { slot: 2, file: "../assets/Bocanada.jpg", label: "Bocanada" },
@@ -28,12 +23,6 @@ const vinylCovers = [
 
 const vinylCards = document.querySelectorAll(".vinyl");
 
-/**
- * Renderiza una imagen dentro del label central y oculta el texto auxiliar.
- * @param {HTMLElement} vinylElement
- * @param {string} src
- * @param {string} label
- */
 const decorateVinyl = (vinylElement, src, label) => {
   const labelNode = vinylElement.querySelector(".vinyl__label");
   const hintNode = vinylElement.querySelector(".vinyl__hint");
